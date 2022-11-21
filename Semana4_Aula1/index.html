@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome</label>
+        <input type="text" id="nome"><br>
+        <label>Logradouro</label>
+        <input type="text" id="logradouro"><br>
+        <label>Nº</label>
+        <input type="number" id="num"><br>
+        <label>Bairro</label>
+        <input type="text" id="bairro"><br>
+        <label>CEP</label>
+        <input type="text" id="cep"><br>
+        <label>Cidade</label>
+        <input type="text" id="cidade"><br>
+        <label>Logradouro</label>
+        <input type="text" id="logradouro"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Configuração do computador</legend>
+        <label>Fonte</label><br>
+        <label><input type="radio" name="fonte" id="fonte450" value="209.99" class="fonte">Fonte 450W</label><br>
+        <label><input type="radio" name="fonte" id="fonte550" value="289.99" class="fonte">Fonte 550W</label><br>
+        <br><label>HD</label><br>
+        <label><input type="radio" name="hd" id="hd1" value="294.99" class="hd">HD 1TB</label><br>
+        <label><input type="radio" name="hd" id="hd480" value="205.98" class="hd">HD SSD 480GB</label><br>
+        <button id="hd2">Adicionar outro HD</button>
+        <span id="hd"></span><br>
+        <br><label>Processador</label><br>
+        <label><input type="radio" name="cpu" id="i5" value="849.99" class="processador">Core I5 10400F</label><br>
+        <label><input type="radio" name="cpu" id="i7" value="1999.99" class="processador">Core I7 10700F</label><br>
+        <br><label>Placa de vídeo</label><br>
+        <label><input type="checkbox" name="video" id="video1650" value="1199.99" class="video">Geforce GTX 1650</label><br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <button id="btConcluir">Concluir</button>
+    </fieldset>
+    <div id="divTotal" class="total invisible"></div>
+    <script src="content.js"></script>
+</body>
+</html>

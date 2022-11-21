@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+    <!--v2.vuejs.org - get started -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <label>
+            <input type="checkbox" v-model="autorizado">
+            Eu autorizo a abertura do site.
+        </label>
+        <p v-if="autorizado">Site autorizado</p>
+        <p v-else>Site não autorizado</p>
+
+        <input type="password" v-model="senha">
+        <label v-if="senha.length == 0">Digite a sua senha</label>
+        <label v-else-if="senha.length <= 5">Senha muito curta</label>
+        <label v-else>Senha ok</label>
+    </div>
+    <script src="js/content.js"></script>
+</body>
+</html>

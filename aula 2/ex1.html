@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <label>Número:</label><br>
+        <input type="text" v-on:input="capturaNum1"><br>
+        <label>Número:</label><br>
+        <input type="text" v-on:input="capturaNum2"><br>
+        <select v-on:click="buscaOp">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
+        <br>
+        <p>{{ resultado }}</p>
+    </div>
+    <script src="js/content_ex1.js"></script>
+</body>
+</html>
